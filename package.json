@@ -5,8 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "deploy": "gh-pages -d build"
+    "build": "react-scripts build"
   },
   "keywords": [],
   "author": "Matthew Budiman",
